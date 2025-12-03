@@ -122,7 +122,29 @@ A seguir está a documentação dos cenários cobertos por cada arquivo de teste
 
 ## 📂 7. Estrutura dos arquivos de teste
 
-FAZERRRRRRRRRRRRRRRRRRRRRRRRRR
+## 📂 Estrutura do Projeto
+
+Abaixo está a organização dos arquivos no repositório. A pasta `node_modules` não é enviada, pois é gerada automaticamente na instalação.
+
+```
+📁 PROJETO-FIRE-ALERT
+│
+├── 📂 cypress
+│   ├── 📂 e2e
+│   │   ├── 📜 login.cy.js       # Testes da Tela de Login e Segurança
+│   │   └── 📜 denuncia.cy.js    # Testes do Formulário e Upload
+│   └── 📂 support               # Arquivos de suporte do Cypress
+│── 📂 node_modules
+├── 📂 js                        # Scripts auxiliares
+├── 📜 login.html                # Página de Login (HTML corrigido)
+├── 📜 denuncia.html             # Página de Denúncia
+├── 📜 auth.js                   # Lógica de autenticação (JS)
+├── 📜 scriptdenuncia.js         # Lógica de preview de imagem (JS)
+├── 📜 style.css                 # Estilos do Login
+├── 📜 styledenuncia.css         # Estilos da Denúncia
+├── 📜 cypress.config.js         # Configuração do Cypress
+├── 📜 package.json              # Lista de dependências (Cypress)
+└── 📜 README.md                 # Documentação do projeto
 ---
 
 ## 🧑‍💻 8. Autor
@@ -131,3 +153,4 @@ FAZERRRRRRRRRRRRRRRRRRRRRRRRRR
 * Testes automatizados por Cypress
 
 ---
+
