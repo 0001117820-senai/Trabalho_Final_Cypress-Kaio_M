@@ -146,6 +146,8 @@ Abaixo está a organização dos arquivos no repositório. A pasta `node_modules
 ├── 📜 package.json              # Lista de dependências (Cypress)
 └── 📜 README.md                 # Documentação do projeto
 ---
+```
+---
 
 ## 🧑‍💻 8. Autor
 
@@ -153,4 +155,5 @@ Abaixo está a organização dos arquivos no repositório. A pasta `node_modules
 * Testes automatizados por Cypress
 
 ---
+
 
