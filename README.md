@@ -22,8 +22,6 @@ Os testes garantem a estabilidade visual, funcional, comportamental e responsiva
 7. [Testes Implementados](#-testes-implementados)
    - Testes da Página de Login
    - Testes da Página de Denúncia
-8. [Possíveis Melhorias Futuras](#-possíveis-melhorias-futuras)
-
 ---
 
 # 🔥 Sobre o Projeto
@@ -108,3 +106,139 @@ Abaixo está a estrutura do repositório apresentada corretamente no GitHub:
 # 🧪 Testes Implementados
 
 A seguir está a documentação completa dos testes por página e grupos.
+
+# 🔐 Testes da Página de Login (login.cy.js)
+
+Os testes foram divididos em 2 grupos:
+
+## GRUPO 1 — Testes Visuais e de Interface (UI)
+```
+✔ Logo
+
+Verifica se está visível
+
+Confere se o src é válido
+
+Verifica o atributo alt="Fire Alert Logo"
+
+
+✔ Título e Estilo
+
+Deve conter FIRE ALERT
+
+Deve possuir classe text-danger
+
+Cor validada via CSS → rgb(220, 53, 69)
+
+
+✔ Subtítulo
+
+Deve conter “Bem-vindo de volta”
+
+
+✔ Campos
+
+Email → placeholder “Digite seu e-mail”
+
+Senha → placeholder “Digite sua senha”
+
+Campo senha deve ser type=password
+
+Ambos devem possuir required
+
+
+✔ Botão
+
+Deve ter classes btn-danger e w-100
+
+Cor validada via CSS
+```
+
+## GRUPO 2 — Testes de Funcionalidade (Lógica)
+```
+✔ Login bem-sucedido
+
+Preenche credenciais válidas
+
+Valida o alerta “Login realizado com sucesso!”
+
+Redireciona para index.html
+
+
+✔ Senha incorreta
+
+Exibe alerta “E-mail ou senha incorretos!”
+
+
+✔ Email inexistente
+
+Também exibe alerta “E-mail ou senha incorretos!”
+
+
+✔ Campos vazios
+
+Navegador bloqueia envio (HTML5)
+
+Página não deve mudar
+
+Não deve exibir alerta de sucesso
+```
+
+# 🚨 Testes da Página de Denúncia (denuncia.cy.js)
+
+Os testes foram divididos em 3 grupos:
+
+## GRUPO 1 — Testes Visuais e de Navegação
+```
+✔ Elementos principais
+
+Logo visível
+
+Título “FIRE ALERT”
+
+Menu com 5 itens
+
+Menu deve conter “Denúncia”
+
+✔ Formulário
+
+Título “Denúncia de Incêndio”
+
+Placeholder do endereço
+
+Placeholder da descrição
+
+Botão de upload → “📷 Envie uma imagem”
+```
+## GRUPO 2 — Funcionalidades (Upload e Envio)
+```
+✔ Upload de imagem
+
+Preview deve iniciar vazio
+
+Uso de selectFile()
+
+Verifica arquivo no input
+
+Preview exibido no DOM
+
+✔ Envio da denúncia
+
+Preenche campos
+
+Clica em enviar
+
+Valida alerta: “Denúncia enviada com sucesso”
+
+Campo endereço deve ser limpo
+```
+## GRUPO 3 — Responsividade (Mobile)
+```
+Simulação do dispositivo iPhone X:
+
+.container deve usar flex-direction: column
+
+header deve reorganizar para coluna
+
+nav deve habilitar flex-wrap: wrap
+```
