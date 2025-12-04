@@ -73,12 +73,6 @@ npx cypress open
 ```
 Selecione E2E Testing e escolha o navegador.
 
-# Modo headless (terminal)
-
-```
-npx cypress run
-```
-
 # 📂 Estrutura do Projeto
 
 Abaixo está a estrutura do repositório apresentada corretamente no GitHub:
@@ -109,7 +103,7 @@ A seguir está a documentação completa dos testes por página e grupos.
 
 # 🔐 Testes da Página de Login (login.cy.js)
 
-Os testes foram divididos em 2 grupos:
+Os testes foram divididos em 3 grupos:
 
 ## GRUPO 1 — Testes Visuais e de Interface (UI)
 ```
@@ -183,6 +177,25 @@ Página não deve mudar
 
 Não deve exibir alerta de sucesso
 ```
+## Gurpo 3 - Responsividade (Mobile)
+Este teste garante que a tela de login se adapte corretamente a dispositivos móveis.
+```
+TESTE ÚNICO — Adaptação Mobile (iPhone X)
+
+✔ Simulação de Dispositivo
+
+Define o viewport para iPhone X (375px de largura)
+
+Força o navegador a renderizar como mobile
+
+✔ Ajuste de Espaçamento (Padding)
+
+Verifica se o padding reduziu de 2rem para 1.5rem (24px)
+
+Garante economia de espaço na tela pequena
+
+✔ Largura Fluida
+```
 
 # 🚨 Testes da Página de Denúncia (denuncia.cy.js)
 
@@ -242,3 +255,4 @@ header deve reorganizar para coluna
 
 nav deve habilitar flex-wrap: wrap
 ```
+
